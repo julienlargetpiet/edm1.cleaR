@@ -2,54 +2,17 @@
 
 # Install
 
--> git clone https://github.com/julienlargetpiet/edm1.clear_elements
+-> git clone https://github.com/julienlargetpiet/edm1.cleaR
 
--> cd edm1.clear_elements
+-> cd edm1.cleaR
 
-edm1.clear_elements > R
+edm1.cleaR > R
 
 R > library("devtools")
 
 R > build()
 
 R > install()
-
-# `col_to_row`
-
-col_to_row
-
-
-## Description
-
-Allow to reverse a dataframe (cols become rows and rows become cols)
-
-
-## Usage
-
-```r
-col_to_row(inpt_datf)
-```
-
-
-## Arguments
-
-Argument      |Description
-------------- |----------------
-`inpt_datf`     |     is the inout dataframe
-
-
-## Examples
-
-```r
-datf_test <- data.frame(c(1:11), c(11:1))
-
-print(col_to_row(inpt_datf = datf_test))
-
-X1 X2 X3 X4 X5 X6 X7 X8 X9 X10 X11
-1  1  2  3  4  5  6  7  8  9  10  11
-2 11 10  9  8  7  6  5  4  3   2   1
-```
-
 
 # `just_anything`
 
@@ -462,51 +425,6 @@ print(just_not_anything3(inpt_v = c("oui222jj644", "oui122jj"),
 anything_v = letters))
 
 [1] "222644" "122"
-```
-
-
-# `row_to_col`
-
-row_to_col
-
-
-## Description
-
-Allow to reverse a dataframe (rows become cols and cols become rows)
-
-
-## Usage
-
-```r
-row_to_col(inpt_datf)
-```
-
-
-## Arguments
-
-Argument      |Description
-------------- |----------------
-`inpt_datf`     |     is the inout dataframe
-
-
-## Examples
-
-```r
-datf_test <- data.frame(c(1, 11), c(2, 10), c(3, 9), c(4, 8))
-
-print(datf_test)
-
-c.1..11. c.2..10. c.3..9. c.4..8.
-1        1        2       3       4
-2       11       10       9       8
-
-print(row_to_col(inpt_datf = datf_test))
-
-1  2
-1 1 11
-2 2 10
-3 3  9
-4 4  8
 ```
 
 
